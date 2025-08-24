@@ -34,3 +34,7 @@ def searchForElement(list,element):
     return 'Not Found'
 print(searchForElement(fruits,'banana'))
 print(searchForElement(fruits,'Custard'))
+
+
+numbers = [3, 1, 4, 1, 5]
+print(sorted(numbers)[2])
