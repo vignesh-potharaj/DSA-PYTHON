@@ -46,26 +46,23 @@ print(Search_and_Remove(nums, val))
 # Given an unsorted integer array, find the smallest missing positive integer.
 
 test3 = [3, 4, -1, 1]
+test4 = [7, 8, 9, 11, 12]
+test5 = [1, 2, 0]
 
-def SMPI(arr, index = 0):
-
-    new_list = []
-    for index in range(len(arr)):
-        if arr[index] > 0 :
-            new_list.append(arr[index]) # first created a list with only positive integers
+def SMPI(arr):
+    positives = set()
+    for x in arr:
+        if x > 0:
+            positives.add(x)
     
-    smallest_number = 0
-    for num in new_list:
-        if num > smallest_number:
-            smallest_number = num      #finding the smallest number
+    i = 1
 
-        
-    smpi = 0
-    for index in range(len(new_list)):
-        if new_list[index] == smpi + 1:
-            smpi = new_list[index]
-
-    return smpi
-
+    while True:
+        if i not in positives:
+            return i 
+        else:
+            i += 1
 
 print(SMPI(test3))
+print(SMPI(test4))
+print(SMPI(test5))
