@@ -31,3 +31,46 @@ def sort_by_second_element(tup):
     return sorted(tup, key = lambda x:x[1])
 
 print(sort_by_second_element(pairs))
+
+
+# Given a list of dictionaries representing students 
+# with keys name and score, sort the list by score in descending order.
+
+students = [
+    {"name": "Alice", "score": 88},
+    {"name": "Bob", "score": 75},
+    {"name": "Charlie", "score": 95},
+]
+
+Sort_by_Score = sorted(students,key= lambda x: x['score'], reverse= True)
+
+print(Sort_by_Score)
+
+# Sort a list of tuples by the sum of elements in each tuple.
+
+tuples_list = [(1, 2), (4, 0), (2, 2), (3, 3)]
+
+sorted_list = sorted(tuples_list, key=sum)
+
+print(sorted_list)
+
+# Custom sort: Sort strings by the number of vowels
+
+words = ["banana", "apple", "cherry", "date"]
+
+sort_by_vowels = sorted(words, key= lambda x:sum(char in 'aeiou' for char in x.lower()))
+
+print(sort_by_vowels)
+
+#  Sort a list of numbers but place odd numbers first (keeping their order)
+
+# Sort a list of numbers such that all odd numbers come before the even numbers, 
+# while preserving the original relative order of odds and evens.
+
+numbers = [5, 2, 3, 4, 1, 6]
+def odd_first(arr):
+    odd = [x for x in arr if x % 2 != 0]
+    even = [x for x in arr if x % 2 == 0]
+    return odd + even
+print(odd_first(numbers))
+
