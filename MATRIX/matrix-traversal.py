@@ -7,7 +7,7 @@ matrix = [
 ]
 # 1. Row-wise traversal
 def matrixTraversal1(arr):
-    print("Matrix Transversal:")
+    print("Matrix row Transversal:")
     for i in range(len(arr)):
         for j in range((len(arr[0]))):
             print(arr[i][j], end = " ")
@@ -23,7 +23,7 @@ matrixTraversal1(matrix)
 
 # 2. Column-wise traversal
 def matrixTraversal2(arr):
-    print("Matrix Transversal:")
+    print("Matrix column Transversal:")
     for i in range(len(arr)):
         for j in range((len(arr[0]))):
             print(arr[j][i], end = " ")
