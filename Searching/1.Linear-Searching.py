@@ -33,10 +33,11 @@ def largestOdd(str):
 
 # Test cases to run:
 print("Test 1:")
-print(largestOdd("123456789"))  # Actually call the function
+print(largestOdd("123456789"))
 
 print("\nTest 2:")
-print(largestOdd("2468"))  # Actually call the function
+print(largestOdd("2468")) 
 
 print("\nTest 3:")
-print(largestOdd("13579"))  # Actually call the function
+print(largestOdd("13579"))
+

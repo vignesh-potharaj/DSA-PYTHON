@@ -65,4 +65,4 @@ def SMPI(arr):
 
 print(SMPI(test3))
 print(SMPI(test4))
-print(SMPI(test5))
+print(SMPI(test5))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
