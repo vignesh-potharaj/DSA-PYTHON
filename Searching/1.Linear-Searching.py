@@ -14,5 +14,29 @@ target = 70
 print(linear_search(numbers, target))
 
 
+# Largest odds number in string
 
+def largestOdd(str):
+    result = 0
+    odds = []
+    for i in range(len(str)):
+        if int(str[i]) % 2 != 0:
+            odds.append(str[i])
+            
+    if len(odds) == 0:
+        result = "no odd numbers in the string"
 
+    for j in range(0,len(odds) - 1):
+        if odds[j] < odds[j + 1]:
+            result = odds[j + 1]
+    return result
+
+# Test cases to run:
+print("Test 1:")
+print(largestOdd("123456789"))  # Actually call the function
+
+print("\nTest 2:")
+print(largestOdd("2468"))  # Actually call the function
+
+print("\nTest 3:")
+print(largestOdd("13579"))  # Actually call the function
