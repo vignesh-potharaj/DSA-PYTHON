@@ -12,7 +12,7 @@ def selection_sort(arr):
         for j in range(i + 1, n):
             if arr[j] < arr[min_index]:
                 min_index = j
-        
+                
         # swap the smallest value found at position 1
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
